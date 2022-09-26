@@ -1,0 +1,185 @@
+@font-face {
+    font-family: "GodOfWar";
+    src: url(./font/GODOFWAR.TTF);
+   
+    
+
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(./font/Poppins-Regular.ttf);
+}
+
+*{
+
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "GodOfWar";
+    text-transform: uppercase;
+}
+
+body{
+    background-color:#1d1e31 ;
+}
+
+p ,button ,a{
+    font-family: "poppins";
+    font-weight:bold 
+}
+
+/* nav-bar */
+
+.nav-bar{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.nav-bar .contenair{
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+   
+
+}
+.nav-bar .contenair,a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  font-weight: 500;
+  
+  
+}
+
+.nav-bar .contenair,a:hover{
+    color: #fec675;
+    transition: 0.3s;
+    
+}
+
+
+
+
+
+/* SECTION 1 */
+
+.section-1 .contenair{
+    display: flex;
+    align-items: center;
+    max-width: 1500px;
+    margin: 0 85px;
+}
+
+.section-1 .contenair .gauche h1{
+    font-size: 6em;
+    color: white;
+    text-shadow:0px 0px 10px white;
+}
+
+.section-1 .contenair .gauche p{
+    color: #888;
+    max-width:600px ;
+    margin: 30px 0;
+    
+}
+
+.section-1 .contenair .gauche button{
+    width: 300px;
+    height: 65px; ;
+    border-radius: 15px;
+    border: none;
+    color: #2c2534;
+    font-size: 1.3em;
+    font-weight: bold;
+    background-color:#fec675;
+    box-shadow: 0px 0px 10px #fec675;
+    letter-spacing: 1.5px;
+
+}
+
+.section-1 .contenair .droite img{
+    width: 530px;
+    
+}
+
+@media  (max-width: 900px) {
+    
+    .section-1 .contenair .gauche h1{
+        font-size: 4em;
+       
+    }
+
+   
+
+
+}
+
+@media  (max-width: 1180px) {
+    
+    .section-1 .contenair{
+        flex-direction: column;
+        margin-top: 50px;
+
+       
+    }
+    .section-1 .contenair .droite img{
+        margin-top:51px ;
+      }
+
+    .gauche{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+   
+
+
+}
+
+
+@media (max-width:545px) {
+    .section-1 .contenair .droite img{
+        width: 455px;
+
+    
+}
+.section-1 .contenair .gauche h1{
+    font-size: 3em;
+   
+}
+
+
+
+
+ }
+
+ @media  (max-width: 700px){
+
+    .nav-bar .contenair,a{
+        font-size: 0.9em;
+    }  
+
+    .nav-bar .contenair img{
+        width: 40px;
+    }
+
+    
+ }
