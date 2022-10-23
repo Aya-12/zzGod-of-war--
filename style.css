@@ -109,13 +109,49 @@ p ,button ,a{
     background-color:#fec675;
     box-shadow: 0px 0px 10px #fec675;
     letter-spacing: 1.5px;
+    text-transform: uppercase;
 
 }
-
+.section-1 .contenair .droite{
+    position: relative;
+}
 .section-1 .contenair .droite img{
     width: 530px;
+    position: relative;
+    z-index: -999;
+
     
 }
+
+.section-1 .contenair .droite::before{
+    content:url(./images/rock-floating.png) ;
+    position: absolute;
+    top:40%;
+    left: 13%;
+    animation: bounce 5s infinite ease-in-out;
+    animation-delay: 0.5s ;
+}
+
+.section-1 .contenair .droite::after{
+    content:url(./images/rock-floating.png) ;
+    position: absolute;
+   bottom: 8%;
+    right: 15%;
+    animation: bounce 5s infinite ease-in-out;
+}
+
+@keyframes bounce{
+    0%{
+       transform: translateY(20%);
+    }
+    50%{
+        transform: translateY(-20%);
+
+    }100%{
+        transform: translateY(20%);
+    }
+}
+
 
 @media  (max-width: 900px) {
     
@@ -183,3 +219,77 @@ p ,button ,a{
 
     
  }
+
+ /* Section 2 */
+
+ .section-2{
+    margin: 100px 0;
+ }
+
+ .section-2 .contenair{
+    display: flex;
+    align-items: center;
+    max-width: 1500px;
+    margin: 0 85px;
+ }
+
+
+ .section-2 .big-card{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    background-color: #353448;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 19px #fec675;
+    animation: shadow  3.5s infinite ease-in-out;
+   
+ }
+
+ @keyframes shadow{
+    0%{
+        box-shadow: 0px 0px 19px #fec675;
+    }
+
+    50%{
+        box-shadow: 0px 0px 50px #fec675;
+    }
+
+    100%{
+        box-shadow: 0px 0px 19px #fec675;
+    }
+ }
+
+ .section-2 .big-card .droite{
+    max-width: 400px;
+ }
+
+ .section-2 .big-card .gauche{
+   margin-right: 50px;
+ }
+
+ .section-2 .big-card p{
+   color: #888;
+   line-break:anywhere;
+ }
+
+ .section-2 .big-card h4{
+    color: #fec675;
+    letter-spacing: 2px;
+ }
+
+ .section-2 .big-card h1{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 4em;
+    margin-bottom: 20px;
+ }
+
+ .section-2 .big-card .gauche img{
+  position: relative;
+  top: -57px;
+  }
+ 
